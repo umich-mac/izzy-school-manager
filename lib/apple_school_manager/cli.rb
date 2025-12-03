@@ -64,7 +64,7 @@ module AppleSchoolManager
           puts
         end
 
-        STDOUT.flush
+        $stdout.flush
       end
     end
 
