@@ -1,0 +1,6 @@
+.DS_Store
+.netrc
+.env
+apple_school_manager-*.gem
+.claude/
+*.pem

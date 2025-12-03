@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require_relative "../lib/apple_school_manager"
+
+begin
+  AppleSchoolManager::CLI.new(ARGV).run
+rescue AppleSchoolManager::CLI::Error => e
+  warn "Error: #{e.message}"
+  exit 1
+rescue Interrupt
+  warn "\nInterrupted"
+  exit 130
+end
